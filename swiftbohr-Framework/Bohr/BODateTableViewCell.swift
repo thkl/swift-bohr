@@ -19,10 +19,7 @@ open class BODateTableViewCell: BOTableViewCell {
     self.datePicker.datePickerMode = .date
     self.setExpansionView(expansionView: self.datePicker)
     self.dateFormatter.dateFormat = self.dateFormat()
-    
-    
-    self.datePicker.addTarget(self, action: Selector("datePickerValueDidChange"), for: .valueChanged)
-    
+    self.datePicker.addTarget(self, action: #selector(datePickerValueDidChange), for: .valueChanged)
   }
   
   override func expansionHeight() -> CGFloat {
@@ -41,7 +38,7 @@ open class BODateTableViewCell: BOTableViewCell {
     }
     
     return self.dateFormatter.dateFormat;
- }
+  }
   
   
   override func settingValueDidChange() {
@@ -54,8 +51,8 @@ open class BODateTableViewCell: BOTableViewCell {
     }
   }
   
- @objc private func datePickerValueDidChange() {
-  self.setting!.value = self.datePicker.date as AnyObject;
+  @objc private func datePickerValueDidChange() {
+    self.setting!.value = self.datePicker.date as AnyObject;
   }
-
+  
 }

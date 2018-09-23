@@ -19,7 +19,7 @@ open class BOChoiceTableViewCell: BOTableViewCell {
     self.selectionStyle = .default
   }
   
-  func footerTitle()->String? {
+  override func footerTitle()->String? {
     if let iVal = self.setting?.value as? Int {
       let currentOption = self.indexFromCurrentValue(value: iVal)
       if (currentOption < self.footerTitles.count) {

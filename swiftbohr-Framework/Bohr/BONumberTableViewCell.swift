@@ -12,8 +12,6 @@ open class BONumberTableViewCell: BOTextTableViewCell {
   
   public var numberOfDecimals : Int = 0
   
-  
-  
   override func setup() {
     super.setup()
     self.textField?.keyboardType = .numberPad

@@ -227,6 +227,7 @@ open class BOTableViewController: UITableViewController {
     
   }
   
+  
   func footerViews()->Array<UITableViewHeaderFooterView> {
     if (_footerViews == nil) {
       _footerViews = Array<UITableViewHeaderFooterView>()
@@ -253,5 +254,51 @@ open class BOTableViewController: UITableViewController {
     return footerView.intrinsicContentSize.height
   }
   
+  open override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+    
+    let thesection = self._sections[section]
+
+    // First, we get the section value, and if it's nil we set it to an empty string (this is the lowest priority for dynamic footers).
+    var footerTitle = thesection.footerTitle
+
+    // Next, we try to find an existing footer in the last cell of the section (this is the medium priority for dynamic footers).
+    if let lastCell = thesection.cells().last {
+      if let lastTitle = lastCell.footerTitle() {
+        footerTitle = lastTitle
+      }
+    }
+    
+    // Finally, we try to find an existing footer in any cell that has a checkmark accessory on it (this is the top priority for dynamic footers).
+    for cell in thesection.cells() {
+      if (cell.accessoryType == UITableViewCell.AccessoryType.checkmark) {
+        if let cellTitle = cell.footerTitle() {
+          footerTitle = cellTitle
+        }
+      }
+    }
+    
+    return (footerTitle != nil) ? footerTitle : ""
+  }
   
+  open override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+    let footerTitle = self.tableView(self.tableView, titleForFooterInSection: section)
+    if (footerTitle != "") {
+      return self.footerViews()[section]
+    } else {
+      return nil
+    }
+  }
+  
+  open override func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
+    let thesection = self._sections[section]
+    if let footerView = view as? UITableViewHeaderFooterView {
+      if (thesection.footerTitleColor != nil) {
+        footerView.textLabel?.textColor = thesection.footerTitleColor!
+      }
+      if (thesection.footerTitleColor != nil) {
+        footerView.textLabel?.font = thesection.footerTitleFont!
+      }
+    }
+  }
+
 }

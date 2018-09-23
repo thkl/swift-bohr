@@ -70,7 +70,7 @@ open class BOTextTableViewCell: BOTableViewCell, UITextFieldDelegate {
   func resetTextFieldAndInvokeInputError(error : BOTextFieldInputError) {
     self.settingValueDidChange()
     if (self.inputErrorBlock != nil) {
-      self.inputErrorBlock!(self,error)
+      let _ = self.inputErrorBlock!(self,error)
     }
   }
   

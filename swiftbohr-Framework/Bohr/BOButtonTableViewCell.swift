@@ -23,5 +23,6 @@ open class BOButtonTableViewCell: BOTableViewCell {
       self.actionBlock!(nil)
     }
   }
+  
     
 }

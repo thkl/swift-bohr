@@ -33,6 +33,7 @@ open class BOTableViewCell: UITableViewCell {
   
   private var expansionView: UIView?
   private var expansionViewTopConstraint: NSLayoutConstraint?
+
   
   required public convenience init(withTitle: String, key : String? , _ handler: @escaping (_ cell : BOTableViewCell) ->Void) {
     self.init(style: (key != nil) ? .value1 : .default , reuseIdentifier: nil)
@@ -105,4 +106,8 @@ open class BOTableViewCell: UITableViewCell {
   }
   
   func setup() {}
+  
+  func footerTitle() -> String? {
+    return nil
+  }
 }

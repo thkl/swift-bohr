@@ -18,7 +18,7 @@ open class BOSwitchTableViewCell: BOTableViewCell {
   
   override public func setup() {
     self.toggleSwitch = UISwitch()
-    self.toggleSwitch.addTarget(self, action: Selector("toggleSwitchValueDidChange"), for: .valueChanged)
+    self.toggleSwitch.addTarget(self, action: #selector(toggleSwitchValueDidChange), for: .valueChanged)
     self.accessoryView = self.toggleSwitch
   }
   
@@ -38,7 +38,7 @@ open class BOSwitchTableViewCell: BOTableViewCell {
     }
   }
   
-  func footerTitle()->String? {
+  override func footerTitle()->String? {
     if let newState = self.setting?.value as? Bool {
       return newState ? self.onFooterTitle : self.offFooterTitle
     }
@@ -46,12 +46,12 @@ open class BOSwitchTableViewCell: BOTableViewCell {
   }
   
   /*
- 
- 
- 
- - (void)updateAppearance {
- self.toggleSwitch.onTintColor = self.secondaryColor;
- }
- 
- */
+   
+   
+   
+   - (void)updateAppearance {
+   self.toggleSwitch.onTintColor = self.secondaryColor;
+   }
+   
+   */
 }

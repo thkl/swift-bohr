@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		E9AD2B4F2157D841004C47F8 /* BOStepperTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AD2B4E2157D841004C47F8 /* BOStepperTableViewCell.swift */; };
 		F7513550213DAB470055A0FB /* swiftbohr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7513547213DAB460055A0FB /* swiftbohr.framework */; };
 		F7513555213DAB470055A0FB /* swiftBohrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7513554213DAB470055A0FB /* swiftBohrTests.swift */; };
 		F7513557213DAB470055A0FB /* swiftBohr.h in Headers */ = {isa = PBXBuildFile; fileRef = F7513549213DAB470055A0FB /* swiftBohr.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -72,6 +73,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E9AD2B4E2157D841004C47F8 /* BOStepperTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOStepperTableViewCell.swift; sourceTree = "<group>"; };
 		F7513535213D8C310055A0FB /* BONumberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BONumberTableViewCell.swift; sourceTree = "<group>"; };
 		F7513537213D90FA0055A0FB /* BODateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BODateTableViewCell.swift; sourceTree = "<group>"; };
 		F7513539213DA0410055A0FB /* BOChoiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOChoiceTableViewCell.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				F751353B213DA5C10055A0FB /* BOPickerTableViewCell.swift */,
 				F759A7BD213DB97000970DA7 /* BOButtonTableViewCell.swift */,
 				F759A7C7213E8AD100970DA7 /* BOSwitchTableViewCell.swift */,
+				E9AD2B4E2157D841004C47F8 /* BOStepperTableViewCell.swift */,
 			);
 			path = Bohr;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				F759A7BB213DB7A900970DA7 /* BOChoiceTableViewCell.swift in Sources */,
 				F783C7BF213D407D00A75A2F /* AppDelegate.swift in Sources */,
 				F759A7BA213DB7A900970DA7 /* BODateTableViewCell.swift in Sources */,
+				E9AD2B4F2157D841004C47F8 /* BOStepperTableViewCell.swift in Sources */,
 				F759A7BC213DB7A900970DA7 /* BOPickerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
