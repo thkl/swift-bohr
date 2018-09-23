@@ -1,0 +1,859 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		F759A7CD213FDC9900970DA7 /* BuildFramework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F759A7CE213FDC9900970DA7 /* Build configuration list for PBXAggregateTarget "BuildFramework" */;
+			buildPhases = (
+				F759A7D1213FDCB500970DA7 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = BuildFramework;
+			productName = BuildFramework;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		F7513550213DAB470055A0FB /* swiftbohr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7513547213DAB460055A0FB /* swiftbohr.framework */; };
+		F7513555213DAB470055A0FB /* swiftBohrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7513554213DAB470055A0FB /* swiftBohrTests.swift */; };
+		F7513557213DAB470055A0FB /* swiftBohr.h in Headers */ = {isa = PBXBuildFile; fileRef = F7513549213DAB470055A0FB /* swiftBohr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7513564213DAFB50055A0FB /* BOTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F783C7DF213D40BE00A75A2F /* BOTableViewController.swift */; };
+		F7513565213DAFBA0055A0FB /* BOTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F783C7E1213D410700A75A2F /* BOTableViewSection.swift */; };
+		F7513567213DAFBF0055A0FB /* BOTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F783C7E3213D48EB00A75A2F /* BOTableViewCell.swift */; };
+		F7513568213DAFC20055A0FB /* BOSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F783C7EA213D554200A75A2F /* BOSetting.swift */; };
+		F7513569213DAFC60055A0FB /* BOTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F783C7F0213D7A5A00A75A2F /* BOTextTableViewCell.swift */; };
+		F751356A213DAFCA0055A0FB /* BONumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7513535213D8C310055A0FB /* BONumberTableViewCell.swift */; };
+		F751356B213DAFCE0055A0FB /* BODateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7513537213D90FA0055A0FB /* BODateTableViewCell.swift */; };
+		F751356C213DAFD10055A0FB /* BOChoiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7513539213DA0410055A0FB /* BOChoiceTableViewCell.swift */; };
+		F751356D213DAFD50055A0FB /* BOPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F751353B213DA5C10055A0FB /* BOPickerTableViewCell.swift */; };
+		F759A7B4213DB7A900970DA7 /* BOTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F783C7DF213D40BE00A75A2F /* BOTableViewController.swift */; };
+		F759A7B5213DB7A900970DA7 /* BOTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F783C7E1213D410700A75A2F /* BOTableViewSection.swift */; };
+		F759A7B6213DB7A900970DA7 /* BOTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F783C7E3213D48EB00A75A2F /* BOTableViewCell.swift */; };
+		F759A7B7213DB7A900970DA7 /* BOSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F783C7EA213D554200A75A2F /* BOSetting.swift */; };
+		F759A7B8213DB7A900970DA7 /* BOTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F783C7F0213D7A5A00A75A2F /* BOTextTableViewCell.swift */; };
+		F759A7B9213DB7A900970DA7 /* BONumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7513535213D8C310055A0FB /* BONumberTableViewCell.swift */; };
+		F759A7BA213DB7A900970DA7 /* BODateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7513537213D90FA0055A0FB /* BODateTableViewCell.swift */; };
+		F759A7BB213DB7A900970DA7 /* BOChoiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7513539213DA0410055A0FB /* BOChoiceTableViewCell.swift */; };
+		F759A7BC213DB7A900970DA7 /* BOPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F751353B213DA5C10055A0FB /* BOPickerTableViewCell.swift */; };
+		F759A7BE213DB97000970DA7 /* BOButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F759A7BD213DB97000970DA7 /* BOButtonTableViewCell.swift */; };
+		F759A7BF213DB97200970DA7 /* BOButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F759A7BD213DB97000970DA7 /* BOButtonTableViewCell.swift */; };
+		F759A7C8213E8AD100970DA7 /* BOSwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F759A7C7213E8AD100970DA7 /* BOSwitchTableViewCell.swift */; };
+		F759A7C9213E8AD300970DA7 /* BOSwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F759A7C7213E8AD100970DA7 /* BOSwitchTableViewCell.swift */; };
+		F783C7BF213D407D00A75A2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F783C7BE213D407D00A75A2F /* AppDelegate.swift */; };
+		F783C7C1213D407D00A75A2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F783C7C0213D407D00A75A2F /* ViewController.swift */; };
+		F783C7C6213D407E00A75A2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F783C7C5213D407E00A75A2F /* Assets.xcassets */; };
+		F783C7C9213D407E00A75A2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F783C7C7213D407E00A75A2F /* LaunchScreen.storyboard */; };
+		F783C7D4213D407E00A75A2F /* swift_bohrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F783C7D3213D407E00A75A2F /* swift_bohrTests.swift */; };
+		F783C7EF213D73CA00A75A2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F783C7EE213D73CA00A75A2F /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7513551213DAB470055A0FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F783C7B3213D407D00A75A2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7513546213DAB460055A0FB;
+			remoteInfo = swiftBohr;
+		};
+		F783C7D0213D407E00A75A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F783C7B3213D407D00A75A2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F783C7BA213D407D00A75A2F;
+			remoteInfo = "swift-bohr";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F7513535213D8C310055A0FB /* BONumberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BONumberTableViewCell.swift; sourceTree = "<group>"; };
+		F7513537213D90FA0055A0FB /* BODateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BODateTableViewCell.swift; sourceTree = "<group>"; };
+		F7513539213DA0410055A0FB /* BOChoiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOChoiceTableViewCell.swift; sourceTree = "<group>"; };
+		F751353B213DA5C10055A0FB /* BOPickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOPickerTableViewCell.swift; sourceTree = "<group>"; };
+		F7513547213DAB460055A0FB /* swiftbohr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = swiftbohr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7513549213DAB470055A0FB /* swiftBohr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = swiftBohr.h; sourceTree = "<group>"; };
+		F751354A213DAB470055A0FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F751354F213DAB470055A0FB /* swiftBohrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftBohrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7513554213DAB470055A0FB /* swiftBohrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftBohrTests.swift; sourceTree = "<group>"; };
+		F7513556213DAB470055A0FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F759A7BD213DB97000970DA7 /* BOButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOButtonTableViewCell.swift; sourceTree = "<group>"; };
+		F759A7C7213E8AD100970DA7 /* BOSwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOSwitchTableViewCell.swift; sourceTree = "<group>"; };
+		F783C7BB213D407D00A75A2F /* swift-bohr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-bohr.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F783C7BE213D407D00A75A2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F783C7C0213D407D00A75A2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F783C7C5213D407E00A75A2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F783C7C8213D407E00A75A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F783C7CA213D407E00A75A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F783C7CF213D407E00A75A2F /* swift-bohrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-bohrTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F783C7D3213D407E00A75A2F /* swift_bohrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_bohrTests.swift; sourceTree = "<group>"; };
+		F783C7D5213D407E00A75A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F783C7DF213D40BE00A75A2F /* BOTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOTableViewController.swift; sourceTree = "<group>"; };
+		F783C7E1213D410700A75A2F /* BOTableViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOTableViewSection.swift; sourceTree = "<group>"; };
+		F783C7E3213D48EB00A75A2F /* BOTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOTableViewCell.swift; sourceTree = "<group>"; };
+		F783C7EA213D554200A75A2F /* BOSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOSetting.swift; sourceTree = "<group>"; };
+		F783C7EE213D73CA00A75A2F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F783C7F0213D7A5A00A75A2F /* BOTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOTextTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7513544213DAB460055A0FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F751354C213DAB470055A0FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7513550213DAB470055A0FB /* swiftbohr.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F783C7B8213D407D00A75A2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F783C7CC213D407E00A75A2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7513548213DAB460055A0FB /* swiftbohr-Framework */ = {
+			isa = PBXGroup;
+			children = (
+				F783C7DE213D408900A75A2F /* Bohr */,
+				F7513549213DAB470055A0FB /* swiftBohr.h */,
+				F751354A213DAB470055A0FB /* Info.plist */,
+			);
+			path = "swiftbohr-Framework";
+			sourceTree = "<group>";
+		};
+		F7513553213DAB470055A0FB /* swiftBohrFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7513554213DAB470055A0FB /* swiftBohrTests.swift */,
+				F7513556213DAB470055A0FB /* Info.plist */,
+			);
+			path = swiftBohrFrameworkTests;
+			sourceTree = "<group>";
+		};
+		F783C7B2213D407D00A75A2F = {
+			isa = PBXGroup;
+			children = (
+				F783C7BD213D407D00A75A2F /* swift-bohr-example */,
+				F783C7D2213D407E00A75A2F /* swift-bohr-example Tests */,
+				F7513548213DAB460055A0FB /* swiftbohr-Framework */,
+				F7513553213DAB470055A0FB /* swiftBohrFrameworkTests */,
+				F783C7BC213D407D00A75A2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F783C7BC213D407D00A75A2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F783C7BB213D407D00A75A2F /* swift-bohr.app */,
+				F783C7CF213D407E00A75A2F /* swift-bohrTests.xctest */,
+				F7513547213DAB460055A0FB /* swiftbohr.framework */,
+				F751354F213DAB470055A0FB /* swiftBohrTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F783C7BD213D407D00A75A2F /* swift-bohr-example */ = {
+			isa = PBXGroup;
+			children = (
+				F783C7BE213D407D00A75A2F /* AppDelegate.swift */,
+				F783C7C0213D407D00A75A2F /* ViewController.swift */,
+				F783C7C5213D407E00A75A2F /* Assets.xcassets */,
+				F783C7C7213D407E00A75A2F /* LaunchScreen.storyboard */,
+				F783C7CA213D407E00A75A2F /* Info.plist */,
+				F783C7EE213D73CA00A75A2F /* Main.storyboard */,
+			);
+			path = "swift-bohr-example";
+			sourceTree = "<group>";
+		};
+		F783C7D2213D407E00A75A2F /* swift-bohr-example Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F783C7D3213D407E00A75A2F /* swift_bohrTests.swift */,
+				F783C7D5213D407E00A75A2F /* Info.plist */,
+			);
+			path = "swift-bohr-example Tests";
+			sourceTree = "<group>";
+		};
+		F783C7DE213D408900A75A2F /* Bohr */ = {
+			isa = PBXGroup;
+			children = (
+				F783C7DF213D40BE00A75A2F /* BOTableViewController.swift */,
+				F783C7E1213D410700A75A2F /* BOTableViewSection.swift */,
+				F783C7E3213D48EB00A75A2F /* BOTableViewCell.swift */,
+				F783C7EA213D554200A75A2F /* BOSetting.swift */,
+				F783C7F0213D7A5A00A75A2F /* BOTextTableViewCell.swift */,
+				F7513535213D8C310055A0FB /* BONumberTableViewCell.swift */,
+				F7513537213D90FA0055A0FB /* BODateTableViewCell.swift */,
+				F7513539213DA0410055A0FB /* BOChoiceTableViewCell.swift */,
+				F751353B213DA5C10055A0FB /* BOPickerTableViewCell.swift */,
+				F759A7BD213DB97000970DA7 /* BOButtonTableViewCell.swift */,
+				F759A7C7213E8AD100970DA7 /* BOSwitchTableViewCell.swift */,
+			);
+			path = Bohr;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F7513542213DAB460055A0FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7513557213DAB470055A0FB /* swiftBohr.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F7513546213DAB460055A0FB /* swiftbohr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7513558213DAB470055A0FB /* Build configuration list for PBXNativeTarget "swiftbohr" */;
+			buildPhases = (
+				F7513542213DAB460055A0FB /* Headers */,
+				F7513543213DAB460055A0FB /* Sources */,
+				F7513544213DAB460055A0FB /* Frameworks */,
+				F7513545213DAB460055A0FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = swiftbohr;
+			productName = swiftBohr;
+			productReference = F7513547213DAB460055A0FB /* swiftbohr.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F751354E213DAB470055A0FB /* swiftBohrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F751355B213DAB470055A0FB /* Build configuration list for PBXNativeTarget "swiftBohrTests" */;
+			buildPhases = (
+				F751354B213DAB470055A0FB /* Sources */,
+				F751354C213DAB470055A0FB /* Frameworks */,
+				F751354D213DAB470055A0FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7513552213DAB470055A0FB /* PBXTargetDependency */,
+			);
+			name = swiftBohrTests;
+			productName = swiftBohrTests;
+			productReference = F751354F213DAB470055A0FB /* swiftBohrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F783C7BA213D407D00A75A2F /* swift-bohr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F783C7D8213D407E00A75A2F /* Build configuration list for PBXNativeTarget "swift-bohr" */;
+			buildPhases = (
+				F783C7B7213D407D00A75A2F /* Sources */,
+				F783C7B8213D407D00A75A2F /* Frameworks */,
+				F783C7B9213D407D00A75A2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swift-bohr";
+			productName = "swift-bohr";
+			productReference = F783C7BB213D407D00A75A2F /* swift-bohr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F783C7CE213D407E00A75A2F /* swift-bohrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F783C7DB213D407E00A75A2F /* Build configuration list for PBXNativeTarget "swift-bohrTests" */;
+			buildPhases = (
+				F783C7CB213D407E00A75A2F /* Sources */,
+				F783C7CC213D407E00A75A2F /* Frameworks */,
+				F783C7CD213D407E00A75A2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F783C7D1213D407E00A75A2F /* PBXTargetDependency */,
+			);
+			name = "swift-bohrTests";
+			productName = "swift-bohrTests";
+			productReference = F783C7CF213D407E00A75A2F /* swift-bohrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F783C7B3213D407D00A75A2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Thomas Kluge";
+				TargetAttributes = {
+					F7513546213DAB460055A0FB = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					F751354E213DAB470055A0FB = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					F759A7CD213FDC9900970DA7 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					F783C7BA213D407D00A75A2F = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					F783C7CE213D407E00A75A2F = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = F783C7BA213D407D00A75A2F;
+					};
+				};
+			};
+			buildConfigurationList = F783C7B6213D407D00A75A2F /* Build configuration list for PBXProject "swift-bohr" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F783C7B2213D407D00A75A2F;
+			productRefGroup = F783C7BC213D407D00A75A2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F783C7BA213D407D00A75A2F /* swift-bohr */,
+				F783C7CE213D407E00A75A2F /* swift-bohrTests */,
+				F7513546213DAB460055A0FB /* swiftbohr */,
+				F751354E213DAB470055A0FB /* swiftBohrTests */,
+				F759A7CD213FDC9900970DA7 /* BuildFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7513545213DAB460055A0FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F751354D213DAB470055A0FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F783C7B9213D407D00A75A2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F783C7EF213D73CA00A75A2F /* Main.storyboard in Resources */,
+				F783C7C9213D407E00A75A2F /* LaunchScreen.storyboard in Resources */,
+				F783C7C6213D407E00A75A2F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F783C7CD213D407E00A75A2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F759A7D1213FDCB500970DA7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n######################\n# Options\n######################\n\nREVEAL_ARCHIVE_IN_FINDER=true\n\nFRAMEWORK_NAME=\"swiftbohr\"\n\nSCHEME_NAME=\"SwiftBohrFramework\"\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework\"\n\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\"\n\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"\n\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${FRAMEWORK_NAME}.framework\"\n\necho \"Project : ${PROJECT_NAME}\" >&1\necho \"Framework Path: ${FRAMEWORK}\" >&1\necho \"Framework : ${FRAMEWORK_NAME}\" >&1\necho \"Scheme : ${SCHEME_NAME}\" >&1\necho \"============================\" >&1\n######################\n# Build Frameworks\n######################\n\n\nxcodebuild -workspace ${PROJECT_NAME}.xcworkspace -scheme ${SCHEME_NAME} -sdk iphonesimulator -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator -UseModernBuildSystem=NO 2>&1\n\nxcodebuild -workspace ${PROJECT_NAME}.xcworkspace -scheme ${SCHEME_NAME} -sdk iphoneos -configuration ${CONFIGURATION} build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos -UseModernBuildSystem=NO 2>&1\n\n######################\n# Create directory for universal\n######################\n\nrm -rf \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${FRAMEWORK}\"\n\n\n######################\n# Copy files Framework\n######################\n\ncp -r \"${DEVICE_LIBRARY_PATH}/.\" \"${FRAMEWORK}\"\n\n\n######################\n# Make an universal binary\n######################\n\nlipo \"${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}\" \"${DEVICE_LIBRARY_PATH}/${FRAMEWORK_NAME}\" -create -output \"${FRAMEWORK}/${FRAMEWORK_NAME}\" | echo\n\n# For Swift framework, Swiftmodule needs to be copied in the universal framework\nif [ -d \"${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\ncp -f ${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\nfi\n\nif [ -d \"${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\ncp -f ${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\nfi\n\n######################\n# On Release, copy the result to release directory\n######################\nOUTPUT_DIR=\"${PROJECT_DIR}/Output/${FRAMEWORK_NAME}-${CONFIGURATION}-iphoneuniversal/\"\n\nrm -rf \"$OUTPUT_DIR\"\nmkdir -p \"$OUTPUT_DIR\"\n\ncp -r \"${FRAMEWORK}\" \"$OUTPUT_DIR\"\n\nif [ ${REVEAL_ARCHIVE_IN_FINDER} = true ]; then\nopen \"${OUTPUT_DIR}/\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7513543213DAB460055A0FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7513567213DAFBF0055A0FB /* BOTableViewCell.swift in Sources */,
+				F7513568213DAFC20055A0FB /* BOSetting.swift in Sources */,
+				F7513565213DAFBA0055A0FB /* BOTableViewSection.swift in Sources */,
+				F751356B213DAFCE0055A0FB /* BODateTableViewCell.swift in Sources */,
+				F751356A213DAFCA0055A0FB /* BONumberTableViewCell.swift in Sources */,
+				F751356C213DAFD10055A0FB /* BOChoiceTableViewCell.swift in Sources */,
+				F751356D213DAFD50055A0FB /* BOPickerTableViewCell.swift in Sources */,
+				F7513569213DAFC60055A0FB /* BOTextTableViewCell.swift in Sources */,
+				F759A7BE213DB97000970DA7 /* BOButtonTableViewCell.swift in Sources */,
+				F759A7C8213E8AD100970DA7 /* BOSwitchTableViewCell.swift in Sources */,
+				F7513564213DAFB50055A0FB /* BOTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F751354B213DAB470055A0FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7513555213DAB470055A0FB /* swiftBohrTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F783C7B7213D407D00A75A2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F759A7B8213DB7A900970DA7 /* BOTextTableViewCell.swift in Sources */,
+				F759A7B5213DB7A900970DA7 /* BOTableViewSection.swift in Sources */,
+				F759A7BF213DB97200970DA7 /* BOButtonTableViewCell.swift in Sources */,
+				F759A7B7213DB7A900970DA7 /* BOSetting.swift in Sources */,
+				F759A7B9213DB7A900970DA7 /* BONumberTableViewCell.swift in Sources */,
+				F759A7B6213DB7A900970DA7 /* BOTableViewCell.swift in Sources */,
+				F759A7B4213DB7A900970DA7 /* BOTableViewController.swift in Sources */,
+				F783C7C1213D407D00A75A2F /* ViewController.swift in Sources */,
+				F759A7C9213E8AD300970DA7 /* BOSwitchTableViewCell.swift in Sources */,
+				F759A7BB213DB7A900970DA7 /* BOChoiceTableViewCell.swift in Sources */,
+				F783C7BF213D407D00A75A2F /* AppDelegate.swift in Sources */,
+				F759A7BA213DB7A900970DA7 /* BODateTableViewCell.swift in Sources */,
+				F759A7BC213DB7A900970DA7 /* BOPickerTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F783C7CB213D407E00A75A2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F783C7D4213D407E00A75A2F /* swift_bohrTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7513552213DAB470055A0FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7513546213DAB460055A0FB /* swiftbohr */;
+			targetProxy = F7513551213DAB470055A0FB /* PBXContainerItemProxy */;
+		};
+		F783C7D1213D407E00A75A2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F783C7BA213D407D00A75A2F /* swift-bohr */;
+			targetProxy = F783C7D0213D407E00A75A2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F783C7C7213D407E00A75A2F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F783C7C8213D407E00A75A2F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7513559213DAB470055A0FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N52R95YQZM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = swiftBohr/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.ksquare.swiftBohr;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F751355A213DAB470055A0FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N52R95YQZM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = swiftBohr/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.ksquare.swiftBohr;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F751355C213DAB470055A0FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N52R95YQZM;
+				INFOPLIST_FILE = swiftBohrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.ksquare.swiftBohrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F751355D213DAB470055A0FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N52R95YQZM;
+				INFOPLIST_FILE = swiftBohrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.ksquare.swiftBohrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F759A7CF213FDC9900970DA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N52R95YQZM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F759A7D0213FDC9900970DA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N52R95YQZM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F783C7D6213D407E00A75A2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "swift-bohr";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F783C7D7213D407E00A75A2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "swift-bohr";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F783C7D9213D407E00A75A2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N52R95YQZM;
+				INFOPLIST_FILE = "$(SRCROOT)/swift-bohr-example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.ksquare.swift-bohr";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F783C7DA213D407E00A75A2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N52R95YQZM;
+				INFOPLIST_FILE = "$(SRCROOT)/swift-bohr-example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.ksquare.swift-bohr";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F783C7DC213D407E00A75A2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N52R95YQZM;
+				INFOPLIST_FILE = "swift-bohrTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.ksquare.swift-bohrTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-bohr.app/swift-bohr";
+			};
+			name = Debug;
+		};
+		F783C7DD213D407E00A75A2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N52R95YQZM;
+				INFOPLIST_FILE = "swift-bohrTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.ksquare.swift-bohrTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-bohr.app/swift-bohr";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7513558213DAB470055A0FB /* Build configuration list for PBXNativeTarget "swiftbohr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7513559213DAB470055A0FB /* Debug */,
+				F751355A213DAB470055A0FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F751355B213DAB470055A0FB /* Build configuration list for PBXNativeTarget "swiftBohrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F751355C213DAB470055A0FB /* Debug */,
+				F751355D213DAB470055A0FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F759A7CE213FDC9900970DA7 /* Build configuration list for PBXAggregateTarget "BuildFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F759A7CF213FDC9900970DA7 /* Debug */,
+				F759A7D0213FDC9900970DA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F783C7B6213D407D00A75A2F /* Build configuration list for PBXProject "swift-bohr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F783C7D6213D407E00A75A2F /* Debug */,
+				F783C7D7213D407E00A75A2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F783C7D8213D407E00A75A2F /* Build configuration list for PBXNativeTarget "swift-bohr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F783C7D9213D407E00A75A2F /* Debug */,
+				F783C7DA213D407E00A75A2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F783C7DB213D407E00A75A2F /* Build configuration list for PBXNativeTarget "swift-bohrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F783C7DC213D407E00A75A2F /* Debug */,
+				F783C7DD213D407E00A75A2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F783C7B3213D407D00A75A2F /* Project object */;
+}

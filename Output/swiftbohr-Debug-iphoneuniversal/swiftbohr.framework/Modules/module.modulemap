@@ -1,0 +1,11 @@
+framework module swiftbohr {
+  umbrella header "swiftbohr.h"
+
+  export *
+  module * { export * }
+}
+
+module swiftbohr.Swift {
+    header "swiftbohr-Swift.h"
+    requires objc
+}
